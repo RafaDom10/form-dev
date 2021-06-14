@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+  <title>Form Dev</title>
+</head>
+
+<body>
+  <div class="theme-switch-wrapper">
+    <span id="toggle-icon">
+      <span class="toggle-text">Light Mode</span>
+      <i class="fas fa-sun"></i>
+    </span>
+    <label class="theme-switch">
+      <input class="toggle" type="checkbox">
+      <div class="slider round"></div>
+    </label>
+  </div>
+  <div  class="form-container">
+    <header class="header-container">
+      <h1>Cadastro de DEV's</h1>
+      <p>Complete suas informações.</p>
+    </header>
+
+    <div class="container">
+      <div class="float-left input-text">
+        <label for="name">Nome</label> <br>
+        <input type="text" name="name" id="name" >
+      </div>
+      <div class="float-right input-text">
+        <label for="name">Sobrenome</label> <br>
+        <input type="text" name="surname" id="surname" >
+      </div>
+      <div class="input-text">
+        <label for="email">Email</label> <br>
+        <input type="email" name="email" id="email" >
+      </div>
+    </div>
+
+    <div class="stacks">
+      <p>De qual lado você desenvolve?</p>
+      <label>
+        <input type="radio" name="devweb" value="frontend" checked>Front-end
+      </label>
+      <label>
+        <input type="radio" name="devweb" value="backend">Back-end
+      </label>
+      <label>
+        <input type="radio" name="devweb" value="fullstack">Fullstack
+      </label>
+    </div>
+
+    <div class="level title">
+      <p>Senioridade</p>
+      <select id="senioridade">
+        <option selected disabled value="">Selecione</option>
+        <option value="junior">Junior</option>
+        <option value="pleno">Pleno</option>
+        <option value="senior">Senior</option>
+      </select>
+    </div>
+
+    <div class="tech title">
+      <p>Selecione as tecnologias que você utiliza.</p>
+      <div class="tech-container">
+        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+        <label for="tecnologia1">HTML</label>
+        <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+        <label for="tecnologia2">CSS</label>
+        <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+        <label for="tecnologia3">Javascript</label>
+        <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+        <label for="tecnologia4">PHP</label>
+        <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+        <label for="tecnologia5">C#</label>
+        <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+        <label for="tecnologia6">Python</label>
+        <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+        <label for="tecnologia7">Java</label>
+      </div>
+    </div>
+
+    <div class="title">
+      <p>Conte um pouco sobre sua experiência:</p>
+      <textarea rows="5" id="experiência" name="experiência">
+      </textarea>
+    </div>
+
+    <!-- Modal -->
+
+    <div class="modal-overlay" id="overlay">
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <h1>Obrigado!! Em breve entraremos em contato ;)</h1>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="btn-container">
+      <button class="btn" onclick="openModal()">Enviar</button>
+    </div>
+  </div>
+
+  <script src="./scripts/script.js"></script>
+</body>
+
+</html>
