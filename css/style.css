@@ -40,6 +40,7 @@ body {
 }
 
 h1 {
+  font-size: 2rem;
   margin: 0;
   color: var(--color-text-title);
   font-family: Fira code, sans-serif;
@@ -336,4 +337,31 @@ input:checked + .slider::before {
 
 ::-webkit-scrollbar-thumb:hover {
   filter: brightness(150%);
+}
+
+/* Media queries */
+
+@media screen and (max-width: 480px) {
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .form-container {
+    margin: 90px 50px;
+  }
+
+  .float-right {
+    float: none;
+  }
+
+  .theme-switch-wrapper {
+    margin-right: 30px;
+    position: absolute;
+  }
+
+  .title p {
+    margin-bottom: 20px;
+  }
+ 
 }
